@@ -34,4 +34,8 @@ public class MemoryMemberRepository implements MemberRepository{
     public List<Member> findAll() {
         return new ArrayList<>(store.values()); //store에 있는 values는 14행에 Member
     }
+
+    public void clearStore() {
+        store.clear();
+    }
 }
